@@ -1,0 +1,44 @@
+# 依赖
+node_modules/
+.pnp
+.pnp.js
+
+# 构建产物
+dist/
+build/
+out/
+
+# 编辑器
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+*.log
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 临时文件
+tmp/
+temp/
+
+# Claude Code 缓存
+.claude/sessions/
+.claude/context-summary-*.md
+.claude/operations-log.md
+.claude/verification-report-*.md
+
+# 项目运行时生成的文档（会随 Skill 运行自动生成）
+docs/prd.md
+docs/design.md
+docs/techsol.md
+docs/architecture.md
+docs/test-report.md
+TODO.md
