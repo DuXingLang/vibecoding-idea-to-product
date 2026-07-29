@@ -1,40 +1,27 @@
 ---
-name: Bug 报告
-about: 提交 Bug 报告帮助我们改进
-title: "[Bug] "
+name: Bug report
+about: 工作流、文档或模板中的缺陷
+title: "[bug] "
 labels: bug
-assignees: ""
 ---
 
-## 描述 Bug
+## 描述
 
-请清晰描述这个 Bug 是什么。
+## 重现步骤
 
-## 复现步骤
+1.
+2.
 
-1. 启动 Claude Code 并触发 Skill
-2. 进入阶段 ___
-3. 执行操作 ___
-4. 看到错误 ___
-
-## 预期行为
-
-请清晰描述你期望发生的事情。
+## 期望行为
 
 ## 实际行为
 
-请描述实际发生的事情。
+## 环境
 
-## 截图
+- Agent（Claude Code / Codex / TRAE / Zcode / 其它）：
+- 系统：
+- Skill 版本（CHANGELOG / commit）：
 
-如能提供截图，将有助于问题的定位。
+## 相关文件
 
-## 环境信息
-
-- Claude Code 版本: [如 0.1.5]
-- 操作系统: [如 Windows 11 / macOS 14]
-- 使用方式: [直接克隆 / 全局 Skill / 项目级安装]
-
-## 额外信息
-
-任何其他有助于解决问题的信息。
+- 例如 `SKILL.md` 章节、docs 路径

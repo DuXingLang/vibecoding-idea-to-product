@@ -29,16 +29,21 @@ Thumbs.db
 tmp/
 temp/
 
-# Claude Code 缓存
+# Claude / Agent 会话缓存（用户机器）
 .claude/sessions/
 .claude/context-summary-*.md
 .claude/operations-log.md
 .claude/verification-report-*.md
 
-# 项目运行时生成的文档（会随 Skill 运行自动生成）
-docs/prd.md
-docs/design.md
-docs/techsol.md
-docs/architecture.md
-docs/test-report.md
-TODO.md
+# 在「用户业务项目」中由 Skill 生成的运行时文档
+# 注意：本 Skill 仓库的 docs/templates、docs/examples、说明文档需要纳入版本库，
+# 故不要在本仓库忽略整个 docs/。若你在业务项目使用本 Skill，可自行取消注释：
+# docs/prd.md
+# docs/design.md
+# docs/techsol.md
+# docs/architecture.md
+# docs/test-report.md
+# docs/checkpoint.md
+# docs/ui-prototypes/
+# docs/archive/
+# TODO.md

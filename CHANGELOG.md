@@ -1,24 +1,34 @@
 # 更新日志
 
-所有重要变更均记录在此文件中。
+本文件遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，版本号遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
-格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
-版本管理遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
+## [2.0.0] — 2026-07-29
 
----
+### Added
+
+- 跨平台 frontmatter：`version`、`compatibility`、`metadata`、中英 `description` / `triggers`
+- Phase 0：**产物推断恢复**、Full Flow / **Fast Track**、想法 brainstorm 路由
+- `docs/templates/*` 六套阶段模板
+- `docs/examples/sample-todo-app/` 示意产物
+- `docs/compatibility.md` 多 Agent 安装与降级说明
+- 生产级中英 `README.md` / `README.en.md`
+- 重建 `CONTRIBUTING.md`、本 CHANGELOG、Issue 模板
+
+### Changed
+
+- `SKILL.md` 全面重写为 v2.0.0 生产级单文件工作流
+- `docs/installation.md` / `usage.md` / `workflow.md` / `faq.md` 对齐 v2
+- 全局规则强化：冲突仲裁、失败降级、平台中立表述
+
+### Removed
+
+- 对单一厂商路径的硬编码依赖（改为「官方文档优先 + 通用复制法」）
 
 ## [1.0.0] — 2026-07-28
 
-### 🎉 初始版本
+### Added
 
-- 发布完整的 7 阶段产品开发工作流（SKILL.md）
-- 覆盖从产品定位到部署上线的全流程
-- 包含 PRD、UI 原型、技术方案、架构文档等关键产出物模板
-- 支持 Mermaid 图表自动生成
-- 支持高保真 HTML/CSS/JS 原型输出
-- 小步迭代开发模式，每次修改前明确范围与验收标准
-- 核心逻辑保护机制，防止 AI 擅自修改关键流程
-- 全量测试与需求回溯机制
-- 文档同步与自动 README 生成
+- 初始 7 阶段工作流与基础文档
 
-[1.0.0]: https://github.com/<你的用户名>/vibecoding-idea-to-product/releases/tag/v1.0.0
+[2.0.0]: https://github.com/DuXingLang/vibecoding-idea-to-product/releases/tag/v2.0.0
+[1.0.0]: https://github.com/DuXingLang/vibecoding-idea-to-product/releases/tag/v1.0.0

@@ -1,99 +1,53 @@
-# 贡献指南
+# 贡献指南 / Contributing
 
-感谢你考虑为 **VibeCoding — Idea to Product** 做出贡献！🎉
+感谢关注 **VibeCoding — Idea to Product**。
 
-本项目的核心是一份 `SKILL.md` 文件，它定义了 Claude Code Agent 的 7 阶段工作流。任何贡献都应围绕提升这个工作流的完整性、可用性和清晰度展开。
+核心交付物是根目录 [`SKILL.md`](./SKILL.md)：跨 Agent 的 idea→product 工作流。贡献应提升其**完整性、可执行性、清晰度与多端可用性**。
 
----
-
-## 🧭 贡献方向
-
-### 欢迎的贡献
-
-- **工作流改进**：完善 7 阶段流程中的细节，增加边界情况处理
-- **文档优化**：修正错别字、优化表达、补充示例
-- **国际化**：添加英文版本的支持
-- **示例补充**：增加更多产品的完整开发案例
-- **Bug 修复**：修复流程中的逻辑漏洞或不一致
-
-### 不适合的贡献
-
-- 与产品开发工作流无关的功能
-- 破坏现有流程结构的重大改动（建议先开 Issue 讨论）
+English summary: improve the skill, templates, docs, or examples; open an issue for large structural changes first; keep MIT license headers where applicable.
 
 ---
 
-## 🚀 贡献流程
+## 欢迎的方向
 
-### 1. 开 Issue
+- 工作流边界情况、门禁与恢复逻辑
+- 文档（中/英）、[compatibility](./docs/compatibility.md) 勘误
+- 模板与 [sample-todo-app](./docs/examples/sample-todo-app/) 示例
+- 错别字、死链、与 SKILL 不一致之处
+- 轻量 CI / issue 模板改进
 
-在提交代码之前，请先创建一个 Issue 描述你想要做的改动：
+## 不适合的方向
 
-- Bug 报告：使用 [Bug Report 模板](.github/ISSUE_TEMPLATE/bug-report.md)
-- 功能建议：使用 [Feature Request 模板](.github/ISSUE_TEMPLATE/feature-request.md)
-
-### 2. Fork & Branch
-
-```bash
-# Fork 本仓库，然后 clone 你的 fork
-git clone https://github.com/<你的用户名>/vibecoding-idea-to-product.git
-cd vibecoding-idea-to-product
-
-# 创建功能分支
-git checkout -b feat/your-feature-name
-```
-
-### 3. 提交改动
-
-```bash
-git add .
-git commit -m "feat: 简洁描述你的改动"
-```
-
-提交信息请遵循 [Conventional Commits](https://www.conventionalcommits.org/zh-hans/) 规范：
-
-| 类型 | 说明 |
-| ------ | ------ |
-| `feat` | 新功能或工作流改进 |
-| `fix` | Bug 修复 |
-| `docs` | 文档更新 |
-| `refactor` | 重构 |
-| `test` | 测试相关 |
-| `chore` | 构建/工具链相关 |
-
-### 4. 发起 Pull Request
-
-- 确保描述清楚你的改动内容和动机
-- 关联相关的 Issue 编号
-- 等待维护者 review
+- 与 idea→product 工作流无关的功能
+- 未讨论的破坏性流程重写（请先开 Issue）
+- 提交真实密钥、隐私数据或侵权内容
 
 ---
 
-## 📝 编码规范
+## 流程
 
-### SKILL.md 编辑规范
-
-1. **保持阶段完整性**：7 阶段结构不可随意增减，新增内容应归入合适阶段
-2. **Mermaid 图表**：确保所有图表可直接渲染，语法正确
-3. **中英文混杂**：技术术语可保留英文，其余使用简体中文
-4. **前后一致**：新增规则与现有规则不矛盾
-
-### 文档规范
-
-1. 文件使用 UTF-8 编码
-2. Markdown 文件每行不超过 120 字符
-3. 代码块标注语言类型
+1. **Issue**：说明问题或提案（可用 Bug / Feature 模板）
+2. **Fork** 并建立分支：`feat/…`、`fix/…`、`docs/…`
+3. **改动**：
+   - 改行为 → 先改 `SKILL.md`，再同步 `docs/workflow.md`、`usage.md`、模板
+   - 仅文档 → 保持中英 README 关键部分对等
+4. **自检**：链接可点；模板章节与 SKILL 一致；无占位「TBD」残留在用户可见主路径
+5. **PR**：说明动机、改动点、如何验证（例如「按 Phase 0 触发词走读」）
 
 ---
 
-## 🙋 常见问题
+## 提交信息
 
-**Q: 我想修改 SKILL.md 中的某个流程，但不确定是否合适？**  
-A: 先开 Issue 讨论，描述你的想法和理由，维护者会给你反馈。
-
-**Q: 发现文档中有错别字，可以直接提 PR 吗？**  
-A: 当然可以！小修复不需要先开 Issue，直接提 PR 即可。
+建议：`type: 简要说明`（`feat` / `fix` / `docs` / `chore`）。
 
 ---
 
-再次感谢你的贡献！🚀
+## 行为准则（简）
+
+尊重协作对象；不人身攻击；假设善意；维护者可关闭辱骂或垃圾 PR/Issue。
+
+---
+
+## 许可证
+
+贡献在合并后按仓库 [MIT License](./LICENSE) 授权。

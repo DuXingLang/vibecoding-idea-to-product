@@ -1,164 +1,119 @@
-# 🚀 VibeCoding — Idea to Product
+# VibeCoding — Idea to Product
 
-> A full-stack AI development workflow from idea to deployment  
-> A Claude Code Agent Skill that guides AI assistants through a 7-stage standardized process to turn your product ideas into shippable products.
+> Full workflow Agent Skill from product idea to shippable delivery  
+> **中文:** [README.md](./README.md)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-8A2BE2)](https://claude.ai/code)
-
----
-
-## 📖 Introduction
-
-**VibeCoding — Idea to Product** is a Claude Code Agent Skill that defines a complete, production-ready product development workflow:
-
-> **PRD → UI Prototype → Tech Solution → Prep → Iterative Development → System Test → Deployment**
-
-When you have a product idea but don't know where to start — or want AI to help you build it in a structured way — this Skill is for you. Every phase has clear deliverables and confirmation gates, preventing AI from wandering off-track or producing runaway code.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](./CHANGELOG.md)
+[![Multi-Agent](https://img.shields.io/badge/agents-Claude%20Code%20%7C%20Codex%20%7C%20TRAE%20%7C%20Zcode-8A2BE2)](./docs/compatibility.md)
 
 ---
 
-## ✨ Key Features
+## Introduction
 
-| Feature | Description |
-| --------- | ------------- |
-| 🧩 **7-Stage Standardized Workflow** | Complete lifecycle from product positioning to deployment |
-| ✅ **Phase-by-Phase Confirmation** | Developer must confirm each phase before proceeding |
-| 📄 **Document-Driven** | Auto-generates PRD, design specs, tech solutions, architecture docs |
-| 🎨 **High-Fidelity Prototypes** | Produces interactive HTML/CSS/JS prototypes, previewable in browser |
-| 📐 **Mermaid Diagrams** | Auto-generates flowcharts, architecture diagrams, ER diagrams |
-| 🔄 **Small-Step Iteration** | One task at a time, with clear scope and acceptance criteria per change |
-| 🛡️ **Core Logic Protection** | Prevents AI from modifying critical flows (auth, payments, etc.) |
-| 🧪 **Full Test Coverage** | Unit tests + state coverage + requirements traceability |
+**VibeCoding — Idea to Product** is a **production-ready, single-file** Agent Skill ([`SKILL.md`](./SKILL.md)). It steers compatible coding agents through gated phases so an idea becomes a deliverable product:
+
+```text
+Phase 0 routing → PRD → UI/design → tech solution → architecture lock
+→ small-step dev → system test → ship
+```
+
+Built for indie builders, engineers who want guardrails on AI coding, and small teams that need consistent delivery artifacts.
 
 ---
 
-## 🚦 Quick Start
+## Why this exists
 
-### Prerequisites
+| Common failure | How this Skill helps |
+| -------------- | -------------------- |
+| Agent drifts off-brief | Phase gates + document-driven development |
+| Context loss | Resume from `docs/` artifacts |
+| Code before design | Prototypes + design spec |
+| Random deps / core rewrites | Architecture constitution + protected logic |
+| Happy-path-only testing | State coverage + PRD traceability + test report |
+| No handoff docs | Phase 7 doc sync + project README |
 
-- [Claude Code](https://claude.ai/code) installed
-- Claude Code can access this project's `SKILL.md`
+---
 
-### Installation
+## Highlights
 
-#### Option 1: Direct Use (Recommended)
+- **Phase 0 + 7 stages**, artifact-based resume, **Full Flow / Fast Track**
+- **Explicit confirmation** before advancing
+- **Templates & example** under `docs/`
+- **Multi-agent**: Claude Code, Codex, TRAE, Zcode, Cursor, generic agents
+- **Bilingual triggers** and dual READMEs
+
+---
+
+## Quick start
 
 ```bash
-# Clone the project
-git clone https://github.com/<your-username>/vibecoding-idea-to-product.git
-
-# Launch Claude Code
-cd vibecoding-idea-to-product
-claude
+git clone https://github.com/DuXingLang/vibecoding-idea-to-product.git
 ```
 
-Then tell Claude:
-
-> "I have an idea, I want to build a product"
-
-Claude will automatically detect the trigger and enter the Skill-defined workflow.
-
-#### Option 2: Install as a Global Skill
-
-Copy `SKILL.md` to your Claude Code global Skills directory:
+Install for your agent ([installation](./docs/installation.md), [compatibility](./docs/compatibility.md)). Claude Code example:
 
 ```bash
-# Adjust the path as needed
-cp SKILL.md ~/.claude/skills/vibecoding-idea-to-product.md
+mkdir -p ~/.claude/skills/vibecoding-idea-to-product
+cp SKILL.md ~/.claude/skills/vibecoding-idea-to-product/SKILL.md
 ```
 
-Then Claude Code can recognize and invoke this Skill from any project.
+In an empty project, say:
 
----
-
-## 📋 Workflow Overview
-
-```
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│  Phase 1    │ →   │  Phase 2    │ →   │  Phase 3    │ →   │  Phase 4    │
-│  Product    │     │  UI Design  │     │  Tech Arch  │     │  Prep Dev   │
-│  → PRD      │     │  → Design   │     │  → Tech Doc │     │  → Arch Doc │
-└─────────────┘     └─────────────┘     └─────────────┘     └─────────────┘
-                                                              │
-                                                              ▼
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│  Phase 7    │ ←   │  Phase 6    │ ←   │  Phase 5    │
-│  Deployment │     │  System Test│     │  Development│
-│  → Docs Sync│     │  → Test Rep │     │  → Iteration│
-└─────────────┘     └─────────────┘     └─────────────┘
+```text
+I have an idea
+# or
+我有一个想法
 ```
 
-See [docs/workflow.md](docs/workflow.md) for detailed explanations of each phase.
+Success means the agent starts **Phase 0** (workspace, git, resume inference, Full vs Fast).
 
 ---
 
-## 🗂️ Deliverables
+## Workflow
 
-Each phase generates corresponding documents in the project's `docs/` directory:
+| Phase | Output |
+| ----- | ------ |
+| 0 Bootstrap | Routing & mode |
+| 1 Product | `docs/prd.md` |
+| 2 Design | `docs/design.md`, `docs/ui-prototypes/` |
+| 3 Tech | `docs/techsol.md` |
+| 4 Prep | `docs/architecture.md` |
+| 5 Build | `TODO.md` + code |
+| 6 Test | `docs/test-report.md` |
+| 7 Ship | Project README, doc sync, optional tag |
 
-| Phase | Output File | Description |
-| ------- | ------------- | ------------- |
-| 1 | `docs/prd.md` | Product Requirements Document |
-| 2 | `docs/design.md` | Design specifications & color scheme |
-| 2 | `docs/ui-prototypes/` | High-fidelity interactive prototypes |
-| 3 | `docs/techsol.md` | Technical implementation plan |
-| 4 | `docs/architecture.md` | Development architecture "constitution" |
-| 5 | `TODO.md` | Task list & progress tracking |
-| 6 | `docs/test-report.md` | Full test report |
-| 7 | `README.md` | Final project README |
-
----
-
-## 📦 Phase Details
-
-### Phase 0: Pre-flight Check
-- Check workspace directory state
-- Check Git repository status
-- Check for existing docs to resume progress
-- Confirm product idea readiness
-
-### Phase 1: Product Positioning
-Claude asks structured questions about target users, scenarios, core features, and success metrics, then generates a PRD.
-
-### Phase 2: UI Design
-3 layout options → Mermaid workflow diagram → color scheme → interactive HTML prototypes → design spec document.
-
-### Phase 3: Tech Solution
-Architecture design, tech stack selection with comparison table, data model, security checklist, performance budget, deployment architecture.
-
-### Phase 4: Development Prep
-Lock down `docs/architecture.md` as the development "constitution" — directory structure, constraints, version control strategy, environment variable management.
-
-### Phase 5: Iterative Development
-One task at a time. Each iteration outputs: target, scope, protected logic, impact, acceptance criteria, test plan. With rollback and error recovery.
-
-### Phase 6: System Testing
-Full code review, security scanning, performance benchmarking, unit tests, requirements traceability, test report generation.
-
-### Phase 7: Deployment
-Documentation sync, CI/CD config generation, API docs, deployment verification, README generation, Git tagging.
+See [docs/workflow.md](./docs/workflow.md) and [docs/usage.md](./docs/usage.md).
 
 ---
 
-## 🤝 Contributing
+## Repository layout
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
----
-
-## 📄 License
-
-This project is open-sourced under the [MIT License](LICENSE).
-
----
-
-## 👤 Author
-
-- **DuXingLang** (独行浪)
+```text
+SKILL.md                 # Core skill (distributable alone)
+README.md / README.en.md
+docs/installation.md usage.md workflow.md compatibility.md faq.md
+docs/templates/
+docs/examples/sample-todo-app/
+```
 
 ---
 
-## ⭐ Support
+## Docs index
 
-If this project helps you, please give it a Star ⭐ to help others discover it!
+| Doc | Purpose |
+| --- | ------- |
+| [SKILL.md](./SKILL.md) | Normative agent workflow |
+| [compatibility.md](./docs/compatibility.md) | Multi-agent install notes |
+| [templates/](./docs/templates/) | Stage templates |
+| [sample-todo-app](./docs/examples/sample-todo-app/) | Sample artifacts |
+
+---
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+## License
+
+[MIT](./LICENSE) © DuXingLang
