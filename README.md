@@ -46,7 +46,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/<你的用户名>/vibecoding-idea-to-product.git
+git clone https://github.com/DuXingLang/vibecoding-idea-to-product.git
 
 # 在 Claude Code 中启动项目
 cd vibecoding-idea-to-product
