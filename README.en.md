@@ -21,7 +21,7 @@ When you have a product idea but don't know where to start — or want AI to hel
 ## ✨ Key Features
 
 | Feature | Description |
-|---------|-------------|
+| --------- | ------------- |
 | 🧩 **7-Stage Standardized Workflow** | Complete lifecycle from product positioning to deployment |
 | ✅ **Phase-by-Phase Confirmation** | Developer must confirm each phase before proceeding |
 | 📄 **Document-Driven** | Auto-generates PRD, design specs, tech solutions, architecture docs |
@@ -98,7 +98,7 @@ See [docs/workflow.md](docs/workflow.md) for detailed explanations of each phase
 Each phase generates corresponding documents in the project's `docs/` directory:
 
 | Phase | Output File | Description |
-|-------|-------------|-------------|
+| ------- | ------------- | ------------- |
 | 1 | `docs/prd.md` | Product Requirements Document |
 | 2 | `docs/design.md` | Design specifications & color scheme |
 | 2 | `docs/ui-prototypes/` | High-fidelity interactive prototypes |

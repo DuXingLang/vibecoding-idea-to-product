@@ -53,7 +53,7 @@ git commit -m "feat: 简洁描述你的改动"
 提交信息请遵循 [Conventional Commits](https://www.conventionalcommits.org/zh-hans/) 规范：
 
 | 类型 | 说明 |
-|------|------|
+| ------ | ------ |
 | `feat` | 新功能或工作流改进 |
 | `fix` | Bug 修复 |
 | `docs` | 文档更新 |
