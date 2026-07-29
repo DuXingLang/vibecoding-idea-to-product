@@ -3,12 +3,6 @@
 > **从产品想法到交付上线的全流程 AI 开发规范**
 > 一套为 Claude Code 设计的 Agent Skill，引导 AI 按 7 阶段标准化流程，将你的产品想法落地为可交付的完整产品。
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-8A2BE2)](https://claude.ai/code)
-[![CI](https://github.com/DuXingLang/vibecoding-idea-to-product/actions/workflows/ci.yml/badge.svg)](https://github.com/DuXingLang/vibecoding-idea-to-product/actions/workflows/ci.yml)
-
----
-
 ## 📖 简介
 
 **VibeCoding — Idea to Product** 是一个为 Claude Code 量身打造的 Agent Skill，它定义了一套完整的、可落地的产品开发工作流：
