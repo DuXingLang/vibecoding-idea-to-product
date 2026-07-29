@@ -37,7 +37,7 @@ Agent 应进入 **Phase 0**，再按门禁推进 **7 阶段**（或经你同意�
 | 6 测试 | 确认测试报告 | `docs/test-report.md` |
 | 7 交付 | 确认 README 与发布动作 | 项目 README、标签建议 |
 
-模板见 [templates/](./templates/)。完整行为见根目录 [SKILL.md](../SKILL.md)。
+完整行为见根目录 [SKILL.md](../SKILL.md)。
 
 ---
 

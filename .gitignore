@@ -35,9 +35,13 @@ temp/
 .claude/operations-log.md
 .claude/verification-report-*.md
 
+# 本仓库不纳入版本库的内部/模板目录
+docs/superpowers/
+docs/templates/
+
 # 在「用户业务项目」中由 Skill 生成的运行时文档
-# 注意：本 Skill 仓库的 docs/templates、docs/examples、说明文档需要纳入版本库，
-# 故不要在本仓库忽略整个 docs/。若你在业务项目使用本 Skill，可自行取消注释：
+# 注意：本 Skill 仓库仍纳入 docs/examples 与说明文档（installation/usage 等）。
+# 若你在业务项目使用本 Skill，可自行取消注释：
 # docs/prd.md
 # docs/design.md
 # docs/techsol.md

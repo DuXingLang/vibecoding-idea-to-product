@@ -42,7 +42,7 @@ git clone https://github.com/DuXingLang/vibecoding-idea-to-product.git
 cd vibecoding-idea-to-product
 ```
 
-核心文件是仓库根目录的 **`SKILL.md`**（可单独复制分发）。可选一并使用 `docs/templates/` 模板。
+核心文件是仓库根目录的 **`SKILL.md`**（可单独复制分发）。流程与产出结构以 `SKILL.md` 为准。
 
 ### 2. 在你的 AI 工具中加载
 
@@ -51,8 +51,6 @@ cd vibecoding-idea-to-product
 ```bash
 mkdir -p ~/.claude/skills/vibecoding-idea-to-product
 cp SKILL.md ~/.claude/skills/vibecoding-idea-to-product/SKILL.md
-# 可选
-cp -r docs/templates ~/.claude/skills/vibecoding-idea-to-product/
 ```
 
 或在项目内使用 `.claude/skills/vibecoding-idea-to-product/SKILL.md`。
@@ -131,12 +129,11 @@ Vibe coding 的最大问题是 AI 容易「跑偏」：
 
 ---
 
-## 示例与模板
+## 示例
 
 - **示意产物**：[docs/examples/sample-todo-app/](./docs/examples/sample-todo-app/)（极简个人待办，阶段 1–4 文档样例）
-- **空白模板**：[docs/templates/](./docs/templates/)（PRD、design、techsol、architecture、test-report、TODO）
 
-示例用于对照「文档长什么样」，不是完整可运行业务源码。
+示例用于对照「文档长什么样」，不是完整可运行业务源码。各阶段空白结构见 [`SKILL.md`](./SKILL.md) 对应章节。
 
 ---
 
@@ -152,7 +149,6 @@ docs/
   workflow.md
   compatibility.md
   faq.md
-  templates/
   examples/sample-todo-app/
 ```
 
@@ -167,7 +163,7 @@ docs/
 3. 提交修改（`git commit -m 'feat: add some amazing improvement'`）  
 4. 推送分支并打开 Pull Request  
 
-改行为请先改 `SKILL.md`，再同步 `docs/` 与模板。详情见 [CONTRIBUTING.md](./CONTRIBUTING.md)。  
+改行为请先改 `SKILL.md`，再同步 `docs/` 说明文档。详情见 [CONTRIBUTING.md](./CONTRIBUTING.md)。  
 Bug 或新想法也可直接开 [Issues](https://github.com/DuXingLang/vibecoding-idea-to-product/issues)。
 
 ---

@@ -41,7 +41,7 @@ git clone https://github.com/DuXingLang/vibecoding-idea-to-product.git
 cd vibecoding-idea-to-product
 ```
 
-The core file is **`SKILL.md`** at the repo root (distributable alone). Optionally copy `docs/templates/`.
+The core file is **`SKILL.md`** at the repo root (distributable alone). Stage structure and outputs are defined there.
 
 ### 2. Load it in your AI tool
 
@@ -125,12 +125,11 @@ This Skill locks boundaries **before** coding, forces small confirmed steps **du
 
 ---
 
-## Examples & templates
+## Examples
 
-- **Sample artifacts:** [docs/examples/sample-todo-app/](./docs/examples/sample-todo-app/) (minimal todo, phases 1–4)  
-- **Blank templates:** [docs/templates/](./docs/templates/)  
+- **Sample artifacts:** [docs/examples/sample-todo-app/](./docs/examples/sample-todo-app/) (minimal todo, phases 1–4)
 
-Samples show document shape; they are not a full production app.
+Samples show document shape; they are not a full production app. Blank section structure lives in [`SKILL.md`](./SKILL.md).
 
 ---
 
@@ -141,7 +140,6 @@ SKILL.md
 README.md / README.en.md
 CONTRIBUTING.md / CHANGELOG.md / LICENSE
 docs/  installation · usage · workflow · compatibility · faq
-docs/templates/
 docs/examples/sample-todo-app/
 ```
 
@@ -156,7 +154,7 @@ Improvements to the workflow, prompts, examples, docs, and multi-agent notes are
 3. Commit (`git commit -m 'feat: add some amazing improvement'`)  
 4. Push and open a Pull Request  
 
-Behavioral changes should update `SKILL.md` first, then `docs/` and templates. See [CONTRIBUTING.md](./CONTRIBUTING.md). Issues are welcome too.
+Behavioral changes should update `SKILL.md` first, then user-facing `docs/`. See [CONTRIBUTING.md](./CONTRIBUTING.md). Issues are welcome too.
 
 ---
 

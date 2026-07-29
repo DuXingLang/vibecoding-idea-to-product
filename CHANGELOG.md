@@ -8,7 +8,6 @@
 
 - 跨平台 frontmatter：`version`、`compatibility`、`metadata`、中英 `description` / `triggers`
 - Phase 0：**产物推断恢复**、Full Flow / **Fast Track**、想法 brainstorm 路由
-- `docs/templates/*` 六套阶段模板
 - `docs/examples/sample-todo-app/` 示意产物
 - `docs/compatibility.md` 多 Agent 安装与降级说明
 - 生产级中英 `README.md` / `README.en.md`
@@ -23,6 +22,7 @@
 ### Removed
 
 - 对单一厂商路径的硬编码依赖（改为「官方文档优先 + 通用复制法」）
+- 仓库不再跟踪 `docs/templates/`、`docs/superpowers/`（本地开发用，见 `.gitignore`）
 
 ## [1.0.0] — 2026-07-28
 

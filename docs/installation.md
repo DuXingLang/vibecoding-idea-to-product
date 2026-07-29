@@ -31,8 +31,6 @@ claude
 ```bash
 mkdir -p ~/.claude/skills/vibecoding-idea-to-product
 cp SKILL.md ~/.claude/skills/vibecoding-idea-to-product/SKILL.md
-# 可选：一并复制模板
-cp -r docs/templates ~/.claude/skills/vibecoding-idea-to-product/
 ```
 
 在任意项目目录启动 Claude Code，使用触发词即可。

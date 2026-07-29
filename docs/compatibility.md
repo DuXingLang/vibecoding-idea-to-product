@@ -24,8 +24,7 @@
 1. 将本仓库的 `SKILL.md` 复制到 Skills 目录，例如：  
    `~/.claude/skills/vibecoding-idea-to-product/SKILL.md`  
    或项目内 `.claude/skills/vibecoding-idea-to-product/SKILL.md`
-2. 可选复制 `docs/templates/` 到同级，便于 Agent 读取模板
-3. 使用中英触发词或描述「从想法做产品 / idea to product」
+2. 使用中英触发词或描述「从想法做产品 / idea to product」
 
 具体目录名以 Claude Code 当前版本说明为准。
 

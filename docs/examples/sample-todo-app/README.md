@@ -23,4 +23,4 @@
 
 ## 如何对照 Skill
 
-阅读仓库根目录 [SKILL.md](../../../SKILL.md) 与 [docs/templates/](../../templates/)。
+阅读仓库根目录 [SKILL.md](../../../SKILL.md)。
