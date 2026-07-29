@@ -3,7 +3,7 @@
 > A full-stack AI development workflow from idea to deployment  
 > A Claude Code Agent Skill that guides AI assistants through a 7-stage standardized process to turn your product ideas into shippable products.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-8A2BE2)](https://claude.ai/code)
 
 ---
@@ -149,7 +149,7 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ## 📄 License
 
-This project is open-sourced under the [MIT License](LICENSE.txt).
+This project is open-sourced under the [MIT License](LICENSE).
 
 ---
 

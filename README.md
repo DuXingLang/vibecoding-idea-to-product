@@ -3,7 +3,7 @@
 > 从产品想法到交付上线的全流程 AI 开发规范  
 > 一套为 Claude Code 设计的 Agent Skill，引导 AI 助手按 7 阶段标准化流程，将你的产品想法落地为可交付的完整产品。
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-8A2BE2)](https://claude.ai/code)
 
 ---
@@ -118,7 +118,7 @@ cp SKILL.md ~/.claude/skills/vibecoding-idea-to-product.md
 
 ## 📄 许可证
 
-本项目基于 [MIT 许可证](LICENSE.txt) 开源。
+本项目基于 [MIT 许可证](LICENSE) 开源。
 
 ---
 
